@@ -1,0 +1,23 @@
+
+{% extends "layout.html" %}
+
+{% block title %}Star Wars API Form{% endblock %}
+
+{% block content %}
+    <h2 style="text-align: center;">Enter data to display a character from SWAPI</h2>
+    <form action="/" method="POST" style="text-align: center;">
+        <fieldset >
+            <legend style="text-align: center;">Display Star Wars Character</legend>
+            <!--p tag with a label inside with a input child-->
+            <p>
+                <label>
+                    What character are you choosing?
+                    <!--input child has a min and max number with 1 value and required-->
+                    <input type="number" min="1" max="88" value="1" id="char-index" name="char-index" required>
+                </label>
+            </p>
+            <!--Submit button outside-->
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+{% endblock %}

@@ -1,0 +1,30 @@
+
+{% extends "layout.html" %}
+
+{% block title %}Star Wars API Form{% endblock %}
+
+{% block content %}
+    <h2 style="text-align: center;">Your character from SWAPI</h2>
+    <form action="/" method="POST" style="text-align: center;">
+            <!--Conditionals to help display the data after the form is submitted -->
+            {% if "name" != 'n/a' and "name" != 'none' %}
+                <p>Name: {{name}}</p>
+            {% endif %}
+            <!-------------->
+            {% if "height" != 'n/a' and "height" != 'none' %}
+                <p>Height: {{height}}</p>
+            {% endif %}
+            <!-------------->
+            {% if "mass" != 'n/a' and "mass" != 'none' %}
+                <p>Mass: {{mass}}</p>
+            {% endif %}
+            <!-------------->
+            {% if "eye_color" != 'n/a' and "eye_color" != 'none' %}
+                <p>Eye Color: {{eye_color}}</p>
+            {% endif %}
+            <!-------------->
+            {% if "hair_color" != 'n/a' and "hair_color" != 'none' %}
+                <p>Hair Color: {{hair_color}}</p>
+            {% endif %}
+    </form>
+{% endblock %}

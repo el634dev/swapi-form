@@ -1,2 +1,3 @@
-# swapi-form
-Form where user enters a number and data from the SWAPI is shown
+# SWAPI-Form
+> Form where user enters data and data is pulled from the SWAPI
+> No live link 
